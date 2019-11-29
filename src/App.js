@@ -28,7 +28,7 @@ render(){
       {this.state.isSignedIn ?(
         <span>
       <div>Signed In!</div>
-      <button onClick={()=>firebase.auth().sigpopupnOut()}>Sign out</button>
+      <button onClick={()=>firebase.auth().signOut()}>Sign out</button>
 <h1>WELCOME {firebase.auth().currentUser.displayName}</h1>
 <img alt="" src={firebase.auth().currentUser.photoURL}/>
       </span>
